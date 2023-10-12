@@ -1,10 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
+import AppHeader from './AppHeader.jsx'
+import AppFooter from './AppFooter.jsx'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <AppHeader />
+  </React.StrictMode>,
+)
+
+ReactDOM.createRoot(document.getElementById('footer')).render(
+  <React.StrictMode>
+    <AppFooter />
   </React.StrictMode>,
 )
