@@ -1,13 +1,9 @@
 import "./App.css";
-import TestFooter from "./components/testFooter"
 
-function App() {
-
+function AppFooter() {
   return(
-    <>
-      <TestFooter />
-    </>
+    <></>
   );
 }
 
-export default App;
+export default AppFooter;

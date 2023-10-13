@@ -1,13 +1,11 @@
 import "./App.css";
-import TestNav from "./components/testNav"
+import Navbar from "./components/Navbar/Navbar"
 
-function App() {
 
+function AppHeader() {
   return(
-    <>
-      <TestNav />
-    </>
+    <Navbar />
   );
 }
 
-export default App;
+export default AppHeader;

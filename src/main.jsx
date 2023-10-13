@@ -4,7 +4,7 @@ import AppHeader from './AppHeader.jsx'
 import AppFooter from './AppFooter.jsx'
 import './index.css'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById('header')).render(
   <React.StrictMode>
     <AppHeader />
   </React.StrictMode>,
