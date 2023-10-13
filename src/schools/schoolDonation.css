@@ -1,0 +1,181 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #f3f4f6;
+}
+
+.navbar {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 20px;
+  background-color: #ffffff;
+}
+
+.header-text {
+  flex: 1;
+  padding: 20px;
+}
+
+.header-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer {
+  width: 100%;
+  padding: 20px;
+  background-color: #333;
+  color: #ffffff;
+}
+
+.donate-form h2 {
+  text-align: center;
+}
+
+.donate-form form {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.column {
+  flex-basis: calc(50% - 10px);
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Impact statistics styles */
+.impact-statistics {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 24%;
+  background-color: #f3f4f6;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stat-icon {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.stat-number {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.stat-description {
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+}
+
+/* Add a background color to the impact statistics section */
+.impact-statistics {
+  background-color: #f9f9f9;
+  padding: 20px 0;
+  margin-top: 50px;
+}
+
+/* Style the impact statistics heading */
+.impact-statistics h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Apply different colors to each stat */
+.stat:nth-child(1) {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.stat:nth-child(2) {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.stat:nth-child(3) {
+  background-color: #ffc107;
+  color: #333;
+}
+
+.stat:nth-child(4) {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+/* Style for mobile devices */
+@media (max-width: 768px) {
+  .impact-statistics {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stat {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
