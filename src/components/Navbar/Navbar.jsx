@@ -21,7 +21,10 @@ function Navbar(){
                 <div className="container">
                     <h1 className="logo"><a href="/index.html">OneWorld</a></h1>
                     <ul>
+                        <li><a href="#" class="current">Orphans</a></li>
+
                         <li><a href="#" className="current">Orphans</a></li>
+
                         <li><a href="#">Schools</a></li>
                         <li><a href="#">War-Torn Countries</a></li>
                     </ul>
