@@ -5,15 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Donate for Schools</title>
     <link rel="stylesheet" href="schoolDonation.css" />
+    <link href="../index.css" rel="stylesheet" />
   </head>
-  <body>
-    <div class="navbar">
-      <h3>DAMEMES GAY NAVBAR</h3>
-      <!-- Your navbar content here -->
-    </div>
+  <body class="schoolDonation">
+    <div id="header"></div>
+    <script type="module" src="/src/main.jsx"></script>
 
-    <div class="header">
-      <div class="header-text">
+    <div class="headerSchool">
+      <div class="headerSchool-text">
         <h1>Donate For Schools</h1>
         <p>
           Empower the dreams of children in third-world countries by donating to
@@ -21,49 +20,40 @@
           classrooms into hubs of hope and knowledge. Let's unite to kindle
           bright futures and shatter the chains of poverty together!
         </p>
-      </div>
-      <div class="header-image">
-        <img src="../assets/philosophy-2.jpg" alt="School" />
-      </div>
-    </div>
 
-    <div class="impact-statistics">
-      <h3>Our Impact</h3>
-      <div class="stat">
-        <div class="stat-icon">
-          <i class="fas fa-graduation-cap"></i>
-        </div>
-        <div class="stat-details">
-          <span class="stat-number">12,500+</span>
-          <span class="stat-description">Students Educated</span>
+        <div class="impact-statistics">
+          <h3>Our Impact</h3>
+          <div class="stat">
+            <div class="stat-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="stat-details">
+              <span class="stat-number">12,500+</span>
+              <span class="stat-description">Students Educated</span>
+            </div>
+          </div>
+          <div class="stat">
+            <div class="stat-icon">
+              <i class="fas fa-chalkboard"></i>
+            </div>
+            <div class="stat-details">
+              <span class="stat-number">500+</span>
+              <span class="stat-description">Teachers Trained</span>
+            </div>
+          </div>
+          <div class="stat">
+            <div class="stat-icon">
+              <i class="fas fa-book"></i>
+            </div>
+            <div class="stat-details">
+              <span class="stat-number">2,000+</span>
+              <span class="stat-description">Books Donated</span>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="stat">
-        <div class="stat-icon">
-          <i class="fas fa-chalkboard"></i>
-        </div>
-        <div class="stat-details">
-          <span class="stat-number">50+</span>
-          <span class="stat-description">Schools Built</span>
-        </div>
-      </div>
-      <div class="stat">
-        <div class="stat-icon">
-          <i class="fas fa-book"></i>
-        </div>
-        <div class="stat-details">
-          <span class="stat-number">2,000+</span>
-          <span class="stat-description">Books Donated</span>
-        </div>
-      </div>
-      <div class="stat">
-        <div class="stat-icon">
-          <i class="fas fa-users"></i>
-        </div>
-        <div class="stat-details">
-          <span class="stat-number">500+</span>
-          <span class="stat-description">Teachers Trained</span>
-        </div>
+      <div class="headerSchool-image">
+        <img src="../assets/philosophy-2.jpg" alt="School" />
       </div>
     </div>
 
@@ -113,13 +103,8 @@
           placeholder="XXXX-XXXX-XXXX-XXXX"
         />
 
-        <button type="submit">Donate</button>
+        <button class="schoolButton" type="submit">Donate</button>
       </form>
-    </div>
-
-    <div class="footer">
-      <h3>DAMEMES GAY FOOTER</h3>
-      <!-- Your footer content here -->
     </div>
 
     <script src="script.js"></script>
