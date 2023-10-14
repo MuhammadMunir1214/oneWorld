@@ -1,65 +1,38 @@
-// document.addEventListener("DOMContentLoaded", function () {
-//   document.querySelector(".donate-btn").addEventListener("click", function () {
-//     let filler = document.getElementById("filler");
-//     let width = parseInt(filler.style.width);
-//     if (width < 100) {
-//       width += 10;
-//       filler.style.width = width + "%";
-//     }
-//   });
+// Both of these 2 functions are from UDEMY cource
 
-//   window.addEventListener("DOMContentLoaded", function () {
-//     const buttons = document.querySelectorAll(".schoolButton");
-
-//     buttons.forEach((button) => {
-//       button.addEventListener("click", function (e) {
-//         const rect = this.getBoundingClientRect();
-//         const x = e.clientX - rect.left;
-//         const y = e.clientY - rect.top;
-
-//         // const buttonTop = e.target.offsetTop;
-//         // const buttonLeft = e.target.offsetLeft;
-
-//         // const xInside = x - buttonLeft;
-//         // const yInside = y - buttonTop;
-
-//         const circle = document.createElement("span");
-//         circle.classList.add("circle");
-//         circle.style.top = y + "px";
-//         circle.style.left = x + "px";
-
-//         this.appendChild(circle);
-
-//         setTimeout(() => circle.remove(), 500);
-//       });
-//     });
-//   });
-// });
-
-const buttons = document.querySelectorAll(".schoolButton");
+// This is for the ripple effect
+const buttons = document.querySelectorAll(".schoolButton"); //This select all elements with the class "schoolButton" and store them in the "buttons" variable
 
 buttons.forEach((button) => {
+  // This is a loop that goes through each button and adds an event listener to each one
   button.addEventListener("click", function (e) {
+    // This adds a click event listener to each button
+
+    // This is to get the x and y coordinates of the button
     const x = e.pageX;
     const y = e.pageY;
 
+    // This is to get the position of the button
     const buttonTop = e.target.offsetTop;
     const buttonLeft = e.target.offsetLeft;
 
+    // This is to get the position of the click inside the button
     const xInside = x - buttonLeft;
     const yInside = y - buttonTop;
 
+    //This is to create the span element with the class "circle" for the animations
     const circle = document.createElement("span");
     circle.classList.add("circle");
-    circle.style.top = yInside + "px";
-    circle.style.left = xInside + "px";
+    circle.style.top = yInside + "px"; // This is to set the top position of the circle
+    circle.style.left = xInside + "px"; //This is to set the left position of the circle
 
-    this.appendChild(circle);
+    this.appendChild(circle); //This is to append the circle to the button
 
-    setTimeout(() => circle.remove(), 500);
+    setTimeout(() => circle.remove(), 500); // this is to remove the circle after 500ms
   });
 });
 
+// This is for the IMAGE CROUSEL
 const img = document.querySelectorAll("#imgs img"); //here img is targeting all the images within the 'img' ID
 
 let idx = 0; //this is to keep track of the current ID of the image
