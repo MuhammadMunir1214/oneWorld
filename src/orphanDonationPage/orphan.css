@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+.schoolDonation {
+    font-family: "Open Sans", sans-serif;
+    background-color: #b3b3b3;
+}
+
+.headerSchool {
+background-image: url("../assets/imdadul-hussain-YiA4wqVpLQQ-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    z-index: -2;
+}
+.headerSchool::before{
+    content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: -1;
+}
+
+.headerSchool-text {
+    flex: 1;
+    padding: 100px;
+}
+/* 
+.headerSchool-image {
+    padding: 30px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.headerSchool-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    padding: 20px;
+} */
+.headerSchool h1 {
+    font-size: 46px;
+    margin: -20px 0 20px;
+}
+
+.headerSchool h2 {
+    margin-bottom: 50px;
+}
+
+.headerSchool p {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.footer {
+    width: 100%;
+    padding: 20px;
+    background-color: #333;
+    color: #ffffff;
+}
+
+.donate-form h2 {
+    text-align: center;
+}
+
+.donate-form form {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.column {
+    flex-basis: calc(50% - 10px);
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.schoolButton {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.schoolButton:hover {
+    background-color: #0056b3;
+}
+
+.impact-statistics {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 24%;
+    background-color: #f3f4f6;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stat-icon {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.stat-number {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.stat-description {
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+}
+
+.impact-statistics {
+    background-color: #f9f9f9;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.impact-statistics h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.stat:nth-child(1) {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.stat:nth-child(2) {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.stat:nth-child(3) {
+    background-color: #ffc107;
+    color: #333;
+}
+
+.stat:nth-child(4) {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .impact-statistics {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stat {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.img1, .img2, .img3, .img4 {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    height: 530px;
+    width: 500px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    z-index: -1;
+}
+
+.image-container {
+    display: flex;
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    background-color: rgb(96, 8, 104);
+    color: #fff;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    width: 49.5%;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.carousel-about-container {
+    display: flex;
+    flex-direction: row;
+    /* Arrange elements side by side */
+    align-items: center;
+    /* Vertically center content */
+}
+
+
+.carousel-about-section {
+    flex: 1;
+    /* Take up the other half of the container width */
+    padding: 20px;
+    /* Adjust the padding as needed */
+    /* Add any styling for the About Us section here */
+}
+
+.carousel-about-section h2 {
+    font-size: 24px;
+    /* Add other styles for the heading as needed */
+}
+
+.carousel-about-section p {
+    /* Add styles for the text in the About Us section */
+}
