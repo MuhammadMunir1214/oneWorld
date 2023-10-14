@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate for Orphans</title>
+    <link rel="stylesheet" href="orphan.css" />
+    <link href="../index.css" rel="stylesheet" />
+  </head>
+  <body class="schoolDonation">
+    <div id="header"></div>
+    <script type="module" src="../main.jsx"></script>
+
+    <div class="headerSchool">
+      <div class="headerSchool-text">
+        <h2>Donate For Orphans</h2>
+        <h1>Together, We Can</h1>
+        <p>
+          Support the dreams of orphaned children in disadvantaged regions by
+          contributing to their well-being. Your donation ignites
+          transformation, creating safe and nurturing environments where these
+          young souls can thrive. Join us in building a brighter future and
+          breaking the cycle of adversity together!
+        </p>
+      </div>
+      <!-- <div class="headerSchool-image">
+        <img src="../assets/philosophy-2.jpg" alt="School" />
+      </div> -->
+    </div>
+    <div class="carousel-about-container">
+      <div class="carousel">
+        <div class="image-container" id="imgs">
+          <img
+            class="img1"
+            src="../assets/bill-wegener-zXfuAIUDfao-unsplash.jpg"
+            alt="first-image"
+          />
+          <img
+            class="img2"
+            src="../assets/hossein-azarbad-1IQJ1sB1T00-unsplash.jpg"
+            alt="second-image"
+          />
+          <img
+            class="img3"
+            src="../assets/persnickety-prints-6A_qiLrWRyY-unsplash.jpg"
+            alt="third-image"
+          />
+          <img
+            class="img4"
+            src="../assets/imdadul-hussain-YiA4wqVpLQQ-unsplash.jpg"
+            alt="fourth-image"
+          />
+        </div>
+      </div>
+      <div class="carousel-about-section">
+        <h2>Why Us</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+
+    <div class="impact-statistics">
+      <h3>Our Impact</h3>
+      <div class="stat">
+        <div class="stat-icon">
+          <i class="fas fa-graduation-cap"></i>
+        </div>
+        <div class="stat-details">
+          <span class="stat-number">12,500+</span>
+          <span class="stat-description">Students Educated</span>
+        </div>
+      </div>
+      <div class="stat">
+        <div class="stat-icon">
+          <i class="fas fa-chalkboard"></i>
+        </div>
+        <div class="stat-details">
+          <span class="stat-number">50+</span>
+          <span class="stat-description">Schools Built</span>
+        </div>
+      </div>
+      <div class="stat">
+        <div class="stat-icon">
+          <i class="fas fa-book"></i>
+        </div>
+        <div class="stat-details">
+          <span class="stat-number">2,000+</span>
+          <span class="stat-description">Books Donated</span>
+        </div>
+      </div>
+      <div class="stat">
+        <div class="stat-icon">
+          <i class="fas fa-users"></i>
+        </div>
+        <div class="stat-details">
+          <span class="stat-number">500+</span>
+          <span class="stat-description">Teachers Trained</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="donate-form">
+      <h2>OneWorld School Donations</h2>
+      <form>
+        <div class="form-group">
+          <div class="column">
+            <label for="firstName">First Name*</label>
+            <input type="text" id="firstName" name="firstName" required />
+          </div>
+          <div class="column">
+            <label for="lastName">Last Name*</label>
+            <input type="text" id="lastName" name="lastName" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="column">
+            <label for="phoneNumber">Phone Number*</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required />
+          </div>
+          <div class="column">
+            <label for="email">Email Address*</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+        </div>
+
+        <label>Choose Donation Amount*</label>
+        <div class="donation-amount">
+          <label><input type="radio" name="amount" value="10" /> $10</label>
+          <label><input type="radio" name="amount" value="50" /> $50</label>
+          <label><input type="radio" name="amount" value="100" /> $100</label>
+          <label class="custom-amount"></label>
+          <input type="number" name="customAmount" placeholder="$ Other" />
+        </div>
+
+        <label class="checkbox-label">
+          <input type="checkbox" name="recurringPayment" /> Make this monthly?
+        </label>
+
+        <label for="creditCard">Card Information*</label>
+        <input
+          type="text"
+          id="creditCard"
+          name="creditCard"
+          required
+          placeholder="XXXX-XXXX-XXXX-XXXX"
+        />
+
+        <button class="schoolButton" type="submit">Donate</button>
+      </form>
+    </div>
+
+    <div class="footer">
+      <h3>DAMEMES GAY FOOTER</h3>
+      <!-- Your footer content here -->
+    </div>
+
+    <script src="orphan.js"></script>
+  </body>
+</html>
