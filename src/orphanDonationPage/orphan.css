@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 
 .schoolDonation {
+   
     font-family: "Open Sans", sans-serif;
     background-color: #b3b3b3;
 }
@@ -19,6 +20,7 @@ background-image: url("../assets/imdadul-hussain-YiA4wqVpLQQ-unsplash.jpg");
     position: relative;
     margin-bottom: 20px;
     z-index: -2;
+    margin-bottom: 0;
 }
 .headerSchool::before{
     content: "";
@@ -75,7 +77,11 @@ background-image: url("../assets/imdadul-hussain-YiA4wqVpLQQ-unsplash.jpg");
 .donate-form h2 {
     text-align: center;
 }
-
+.donate-form{
+    background-color: rgb(170 166 166);
+    padding: 50px;
+    margin-bottom: -30px;
+}
 .donate-form form {
     max-width: 600px;
     margin: 20px auto;
@@ -127,10 +133,21 @@ textarea {
 }
 
 .impact-statistics {
-    margin-top: 30px;
+    background-color: rgb(124, 124, 124);
+    padding: 20px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    width: 100%;
+    padding:50px;
+}
+
+.impact-statistics h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    padding-right: 10px;
 }
 
 .stat {
@@ -138,10 +155,18 @@ textarea {
     flex-direction: column;
     align-items: center;
     width: 24%;
-    background-color: #f3f4f6;
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stat:hover {
+    background-color: #000000;
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.281);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
 .stat-icon {
@@ -157,19 +182,9 @@ textarea {
 .stat-description {
     text-align: center;
     font-size: 14px;
-    color: #777;
+    color: rgb(0, 0, 0);
 }
 
-.impact-statistics {
-    background-color: #f9f9f9;
-    padding: 20px 0;
-    margin-top: 50px;
-}
-
-.impact-statistics h3 {
-    text-align: center;
-    margin-bottom: 20px;
-}
 
 .stat:nth-child(1) {
     background-color: #007bff;
@@ -177,17 +192,17 @@ textarea {
 }
 
 .stat:nth-child(2) {
-    background-color: #28a745;
+    background-color: #176e17;
     color: #fff;
 }
 
 .stat:nth-child(3) {
-    background-color: #ffc107;
-    color: #333;
+    background-color: #bd951c;
+    color: #ffffff;
 }
 
 .stat:nth-child(4) {
-    background-color: #dc3545;
+    background-color: #9e1c29;
     color: #fff;
 }
 
@@ -199,14 +214,16 @@ textarea {
 
     .stat {
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
     }
 }
-
+.img1,.img3{
+        opacity: 0.85;
+}
 .img1, .img2, .img3, .img4 {
     width: 500px;
-    height: 500px;
     object-fit: cover;
+    border-radius:20px;
 }
 
 .carousel {
@@ -216,7 +233,8 @@ textarea {
     overflow: hidden;
     position: relative;
     display: flex;
-    z-index: -1;
+    margin-left: 30px;
+    border-radius: 20px;
 }
 
 .image-container {
@@ -247,22 +265,45 @@ textarea {
     outline: none;
 }
 
-.carousel-about-container {
+.carousel-container {
+    /* margin-top: 6rem; */
     display: flex;
     flex-direction: row;
     align-items: center;
+        /* margin-bottom: 6rem; */
+        height: 600px;
+    background-color: rgb(154, 154, 154);
+        color:rgb(0, 0, 0);
 }
+
+
 
 
 .carousel-about-section {
     flex: 1;
-    padding: 20px;
-   
+    padding: 40px;
+
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left:30px;
+    margin-right: 30px;
+        background-color: #dedede;
 }
 
 .carousel-about-section h2 {
-    font-size: 24px;
+    font-size: 28px;
+    margin-bottom: 20px;
+    /* Add some space between the heading and the text */
+    color: #333;
+    /* Adjust the text color for better contrast */
 }
 
 .carousel-about-section p {
+    font-size: 18px;
+    color: #433722;
+    line-height: 1.5;
+    font-family: 'Poppins';
 }
