@@ -250,25 +250,19 @@ textarea {
 .carousel-about-container {
     display: flex;
     flex-direction: row;
-    /* Arrange elements side by side */
     align-items: center;
-    /* Vertically center content */
 }
 
 
 .carousel-about-section {
     flex: 1;
-    /* Take up the other half of the container width */
     padding: 20px;
-    /* Adjust the padding as needed */
-    /* Add any styling for the About Us section here */
+   
 }
 
 .carousel-about-section h2 {
     font-size: 24px;
-    /* Add other styles for the heading as needed */
 }
 
 .carousel-about-section p {
-    /* Add styles for the text in the About Us section */
 }
