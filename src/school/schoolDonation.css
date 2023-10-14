@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 
+/* ----------School Donation Page Header CSS---------- */
 .schoolDonation {
   font-family: "Open Sans", sans-serif;
   background-color: #b3b3b3;
@@ -67,14 +68,9 @@
   border-radius: 5px;
   padding: 20px;
 }
+/* ----------END SCHOOL DONATION PAGE HEADER CSS---------- */
 
-.footer {
-  width: 100%;
-  padding: 20px;
-  background-color: #333;
-  color: #ffffff;
-}
-
+/* ----------School Donation Page DONATE FORM CSS---------- */
 .donate-form h2 {
   text-align: center;
 }
@@ -148,7 +144,9 @@ textarea {
     opacity: 0;
   }
 }
+/* ----------END SCHOOL DONATION PAGE DONATE FORM CSS---------- */
 
+/* ----------School Donation Page Impact Statistics CSS---------- */
 .impact-statistics {
   background-color: rgb(124, 124, 124);
   padding: 20px 0;
@@ -233,19 +231,9 @@ textarea {
     margin-bottom: 50px;
   }
 }
+/* ----------END SCHOOL DONATION PAGE IMPACT STATISTICS CSS---------- */
 
-@media (max-width: 768px) {
-  .impact-statistics {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .stat {
-    width: 100%;
-    margin-bottom: 50px;
-  }
-}
-
+/* ----------School Donation Page Carousel CSS---------- */
 .carousel-section {
   display: flex;
   align-items: center;
@@ -284,7 +272,6 @@ textarea {
   transition: transform 0.5s ease-in-out;
 }
 
-/*about section for the carousel section*/
 .carousel-about {
   flex: 1;
   padding: 40px;
@@ -308,3 +295,4 @@ textarea {
   line-height: 1.5;
   font-family: "Poppins";
 }
+/* ----------END SCHOOL DONATION PAGE CAROUSEL CSS---------- */
