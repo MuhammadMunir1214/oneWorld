@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Donate for Schools</title>
     <link rel="stylesheet" href="schoolDonation.css" />
+    <link href="../index.css" rel="stylesheet" />
   </head>
   <body class="schoolDonation">
     <div id="header"></div>
@@ -98,15 +99,16 @@
           type="text"
           id="creditCard"
           name="creditCard"
-          required
           placeholder="XXXX-XXXX-XXXX-XXXX"
+          required
         />
 
-        <button class="schoolButton" type="submit">Donate</button>
+        <button class="schoolButton" type="submit">
+          Donate
+          <span class="circle"></span>
+        </button>
       </form>
     </div>
     <div id="footer"></div>
-
-    <script src="script.js"></script>
   </body>
 </html>
