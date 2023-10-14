@@ -21,7 +21,7 @@ function Navbar(){
                     <ul>
                         <li><a href="/src/orphanDonationPage/orphan.html" className="current">Orphans</a></li>
                         <li><a href="/src/school/schoolDonation.html">Schools</a></li>
-                        <li><a href="#">War-Torn Countries</a></li>
+                        <li><a href="/src/WarTorn/wartorn.html">War-Torn Countries</a></li>
                     </ul>
                     <button className="contactus">Contact us</button>
                 </div>
