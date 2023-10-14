@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-wartorn {
+  background-image: url("../assets/wartorn-country1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 30vh; /* Reduced height */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.hero-wartorn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content-wartorn h2,
+.content-wartorn h3 {
+  font-size: 130%; /* Adjusted font size */
+  margin: 15px 0;  /* Adjusted margin */
+}
+
+.content-wartorn p {
+  color: #555;
+  line-height: 25px; /* Adjusted line height */
+  letter-spacing: 1.2px;
+}
+
+.countries-wrapper {
+  position: relative;
+  width: 100%;
+  height: 30vh; /* Adjusted height */
+}
+
+.country {
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  transform-origin: center center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.country img {
+  max-width: 50%;
+  display: block;
+  border-radius: 50%;
+}
+
+.country-info {
+  display: none;
+}
+
+.country:hover {
+    z-index: 100; /* Increased z-index value for the hovered country */
+}
+
+.country:hover .country-info {
+    z-index: 101; /* Ensure the hover text is above the hovered country */
+}
+
+.country:hover .country-info {
+  display: block;
+  position: fixed;
+  top: 20%;
+  left: 30%;
+  width: 200%;
+  height: auto;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.country:hover {
+  opacity: 1;
+}
