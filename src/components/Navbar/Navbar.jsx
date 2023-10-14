@@ -1,6 +1,5 @@
-import React from 'react'
-import "./Navbar.css"
-
+import React from "react";
+import "./Navbar.css";
 
 function Navbar(){
     const nav = document.querySelector('.nav');
@@ -14,14 +13,15 @@ function Navbar(){
             nav.classList.remove('active');
         }
     }
-    
+  }
+
 
     return(
             <nav className="nav">
                 <div className="container">
                     <h1 className="logo"><a href="/index.html">OneWorld</a></h1>
                     <ul>
-                        <li><a href="" className="current">Orphans</a></li>
+                        <li><a href="#" className="current">Orphans</a></li>
                         <li><a href="#">Schools</a></li>
                         <li><a href="#">War-Torn Countries</a></li>
                     </ul>
