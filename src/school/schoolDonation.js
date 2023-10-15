@@ -29,6 +29,51 @@ buttons.forEach((button) => {
     this.appendChild(circle); //This is to append the circle to the button
 
     setTimeout(() => circle.remove(), 500); // this is to remove the circle after 500ms
+
+    // ADDING THE THANK YOU TEXT AFTER THE USER DONATES
+
+
+        const firstName = document.getElementById('firstName').value;
+        const lastName = document.getElementById('lastName').value;
+        const phoneNumber = document.getElementById('phoneNumber').value;
+        const email = document.getElementById('email').value;
+        const creditCard = document.getElementById('creditCard').value;
+
+
+        // Display a thank you message
+        if (firstName && lastName && phoneNumber && email  && creditCard) {
+        const thankYouMessage = document.createElement('p');
+        thankYouMessage.textContent = 'Thank you for your donation!';
+        thankYouMessage.style.color = 'red';
+    
+        // Insert the thank you message after the button
+        button.insertAdjacentElement('afterend', thankYouMessage);
+    
+        // Remove the thank you message after a few seconds
+        setTimeout(() => thankYouMessage.remove(), 3000);
+    
+        // Reset input values after a delay
+        setTimeout(() => {
+          const firstName = document.getElementById('firstName');
+          const lastName = document.getElementById('lastName');
+          const phoneNumber = document.getElementById('phoneNumber');
+          const email = document.getElementById('email');
+          const customAmount = document.querySelector('input[name="customAmount"]');
+          const recurringPayment = document.querySelector('input[name="recurringPayment"]');
+          const creditCard = document.getElementById('creditCard');
+    
+          // Clear input values
+          firstName.value = '';
+          lastName.value = '';
+          phoneNumber.value = '';
+          email.value = '';
+          customAmount.value = '';
+          recurringPayment.checked = false;
+          const amountRadios = document.querySelectorAll('input[name="amount"]');
+          amountRadios.forEach((radio) => (radio.checked = false));
+          creditCard.value = '';
+        }, 2000);
+      }
   });
 });
 

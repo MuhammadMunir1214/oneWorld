@@ -108,7 +108,7 @@
     <!----------------School Donation Page Donation Form--------------------->
     <div class="donate-form">
       <h2>OneWorld School Donations</h2>
-      <form action="/src/school/schoolDonation.html" method="GET">
+      <form onsubmit="event.preventDefault(); validateMyForm();">
         <div class="form-group">
           <div class="column">
             <label for="firstName">First Name*</label>
@@ -153,7 +153,7 @@
         />
 
         <!----------------School Donation Page Donate Button--------------------->
-        <button class="schoolButton" type="submit">
+        <button class="schoolButton">
           Donate
           <span class="circle"></span>
         </button>
