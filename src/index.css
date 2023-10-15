@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -52,10 +52,9 @@ body {
 .hero h1 {
   font-family: "Playfair Display", sans-serif;
   font-size: 72px;
-  font-weight: 700; 
+  font-weight: 700;
   line-height: 90px;
   margin: -20px 0 90px;
-
 }
 
 .hero h2 {
@@ -90,8 +89,8 @@ body {
 }
 
 .content1-midsection .img1 {
- height: 20rem; 
- width: 20rem;
+  height: 20rem;
+  width: 20rem;
 }
 
 .img1 img {
@@ -109,4 +108,26 @@ body {
   object-fit: cover;
   height: 100%;
   width: 100%;
+}
+
+/**** Auto Text Effect CSS (UDEMY)****/
+
+.text input {
+  width: 50px;
+  padding: 5px;
+  font-size: 18px;
+  border: none;
+  text-align: center;
+}
+
+.text div {
+  position: absolute;
+  bottom: 20px;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.text input:focus {
+  outline: none;
 }
