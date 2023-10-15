@@ -20,3 +20,34 @@ function changeImage() {
   //this is what gives the animation of it moving like a slideshow, moves by 500px because it is the width of the carousel container, therefore the image
   imgs.style.transform = `translateX(${-idx * 500}px)`;
 }
+
+const buttons = document.querySelectorAll(".orphanButton"); //This select all elements with the class "schoolButton" and store them in the "buttons" variable
+
+buttons.forEach((button) => {
+  // This is a loop that goes through each button and adds an event listener to each one
+  button.addEventListener("click", function (e) {
+    // This adds a click event listener to each button
+
+    // This is to get the x and y coordinates of the button
+    const x = e.pageX;
+    const y = e.pageY;
+
+    // This is to get the position of the button
+    const buttonTop = e.target.offsetTop;
+    const buttonLeft = e.target.offsetLeft;
+
+    // This is to get the position of the click inside the button
+    const xInside = x - buttonLeft;
+    const yInside = y - buttonTop;
+
+    //This is to create the span element with the class "circle" for the animations
+    const circle = document.createElement("span");
+    circle.classList.add("circle");
+    circle.style.top = yInside + "px"; // This is to set the top position of the circle
+    circle.style.left = xInside + "px"; //This is to set the left position of the circle
+
+    this.appendChild(circle); //This is to append the circle to the button
+
+    setTimeout(() => circle.remove(), 500); // this is to remove the circle after 500ms
+  });
+});
