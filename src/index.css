@@ -134,7 +134,8 @@ body {
 
 .text input:focus {
   outline: none;
-  
+}
+
 .midCards {
   display: flex;
 }
@@ -180,5 +181,4 @@ body {
   font-family: "montserrat", sans-serif;
   letter-spacing: 3px;
   line-height: 20px;
-
 }
