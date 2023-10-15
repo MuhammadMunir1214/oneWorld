@@ -1,9 +1,16 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&family=Montserrat&family=Playfair+Display&display=swap");
 
 /* ----------School Donation Page Header CSS---------- */
 .schoolDonation {
-  font-family: "Open Sans", sans-serif;
-  background-color: #b3b3b3;
+  font-family: "montserrat", sans-serif;
+  background: linear-gradient(
+    to right,
+    #000000,
+    #212121,
+    #695b5b,
+    #222222,
+    #000000
+  );
 }
 
 .headerSchool {
@@ -35,22 +42,28 @@
 }
 
 .headerSchool-text {
+  font-family: "montserrat", sans-serif;
   flex: 1;
   padding: 100px;
 }
 
 .headerSchool h1 {
-  font-size: 46px;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 72px;
   margin: -20px 0 20px;
 }
 
 .headerSchool h2 {
+  font-family: "montserrat", sans-serif;
   margin-bottom: 50px;
+  font-size: 36px;
 }
 
 .headerSchool p {
-  font-size: 20px;
+  font-family: "montserrat", sans-serif;
+  font-size: 18px;
   letter-spacing: 1px;
+  margin-bottom: 50px;
 }
 
 .headerSchool-image {
@@ -151,7 +164,6 @@ textarea {
   margin-top: 10px;
 }
 
-/* Style the donate button */
 .schoolButton {
   background-color: #007bff;
   color: #fff;
@@ -192,7 +204,7 @@ textarea {
 
 /* ----------School Donation Page Impact Statistics CSS---------- */
 .impact-statistics {
-  background-color: rgb(124, 124, 124);
+  background-color: grey;
   padding: 20px 0;
   display: flex;
   justify-content: space-around;
@@ -263,18 +275,6 @@ textarea {
   background-color: #91006c;
   color: #fff;
 }
-
-@media (max-width: 768px) {
-  .impact-statistics {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .stat {
-    width: 100%;
-    margin-bottom: 50px;
-  }
-}
 /* ----------END SCHOOL DONATION PAGE IMPACT STATISTICS CSS---------- */
 
 /* ----------School Donation Page Carousel CSS---------- */
@@ -282,7 +282,7 @@ textarea {
   display: flex;
   align-items: center;
   height: 600px;
-  background-color: rgb(154, 154, 154);
+  background-color: grey;
   color: rgb(0, 0, 0);
 }
 
@@ -343,7 +343,7 @@ textarea {
 
 /* ----------School Donation Page Donation Info CSS---------- */
 .wrapper {
-  background: white;
+  background: #dedede;
   padding: 40px 60px;
   border-radius: 20px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);

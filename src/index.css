@@ -92,16 +92,9 @@ body {
   font-family: "Playfair Display", sans-serif;
 }
 
-.content1-paragraph {
-  font-size: 16px;
-  font-weight: 400px;
-  line-height: 26px;
-  color: gray;
-}
-
-.content1-midsection2 .img1 {
-  height: 30rem;
-  width: 30rem;
+.content1-midsection .img1 {
+  height: 20rem;
+  width: 20rem;
 }
 
 .img1 img {
@@ -121,6 +114,27 @@ body {
   width: 100%;
 }
 
+/**** Auto Text Effect CSS (UDEMY)****/
+
+.text input {
+  width: 50px;
+  padding: 5px;
+  font-size: 18px;
+  border: none;
+  text-align: center;
+}
+
+.text div {
+  position: absolute;
+  bottom: 20px;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.text input:focus {
+  outline: none;
+  
 .midCards {
   display: flex;
 }
@@ -166,4 +180,5 @@ body {
   font-family: "montserrat", sans-serif;
   letter-spacing: 3px;
   line-height: 20px;
+
 }

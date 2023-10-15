@@ -89,14 +89,14 @@ th:first-child {
 .headerOrphan h1 {
   font-family: "Playfair Display", sans-serif;
   font-size: 72px;
-  font-weight: 700; 
+  font-weight: 700;
   line-height: 90px;
   margin: -20px 0 90px;
 }
 
 .headerOrphan h2 {
   font-size: 20px;
-  font-family: "montserrat",sans-serif;
+  font-family: "montserrat", sans-serif;
   font-weight: 600;
   line-height: 28px;
   margin-bottom: 50px;
@@ -104,7 +104,7 @@ th:first-child {
 
 .headerOrphan p {
   font-weight: 400;
-  font-family: "montserrat",sans-serif;
+  font-family: "montserrat", sans-serif;
   font-size: 18px;
   line-height: 30px;
 
