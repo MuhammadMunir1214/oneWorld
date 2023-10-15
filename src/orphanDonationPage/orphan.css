@@ -51,7 +51,7 @@ th:first-child {
 .OrphanDonation {
   font-family: "Open Sans", sans-serif;
   background-color: #b3b3b3;
-    background: linear-gradient(to right, #000000, #212121, #695b5b, #222222, #000000);
+  background: linear-gradient(to right, #000000, #212121, #695b5b, #222222, #000000);
 }
 
 .headerOrphan {
