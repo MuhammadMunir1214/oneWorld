@@ -42,7 +42,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.4);
   z-index: -1;
 }
 
@@ -154,7 +154,7 @@ em {
 .stat {
   flex: 1;
   margin: 10px;
-  background: rgb(151, 49, 15);
+  background: rgb(207, 67, 20);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 8px;
   padding: 20px;
@@ -163,25 +163,25 @@ em {
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
-/* Colorful backgrounds for the boxes */
+
 .stat:nth-child(1) {
   background: #b25d5d;
-} /* Light red */
+}
 .stat:nth-child(2) {
-  background: #79ba7c;
-} /* Light green */
+  background: #80c403;
+} 
 .stat:nth-child(3) {
-  background: #64b5f6;
-} /* Light blue */
+  background: #1dbabf;
+}
 .stat:nth-child(4) {
-  background: #4f4fff;
-} /* Yellow */
+  background: #007bff;
+} 
 .stat:nth-child(5) {
-  background: #ba68c8;
-} /* Purple */
+  background: #d402a0;
+} 
 .stat:nth-child(6) {
-  background: #cf775d;
-} /* Orange */
+  background: #d11e30;
+} 
 
 .stat:hover {
   cursor: pointer;
