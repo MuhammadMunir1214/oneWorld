@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&family=Montserrat&family=Playfair+Display&display=swap");
 
 
 /* ----------------- ORPHAN HEADER CSS ---------------*/
@@ -41,17 +41,27 @@
 }
 
 .headerOrphan h1 {
-    font-size: 46px;
-    margin: -20px 0 20px;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 72px;
+  font-weight: 700; 
+  line-height: 90px;
+  margin: -20px 0 90px;
 }
 
 .headerOrphan h2 {
-    margin-bottom: 50px;
+  font-size: 20px;
+  font-family: "montserrat",sans-serif;
+  font-weight: 600;
+  line-height: 28px;
+  margin-bottom: 50px;
 }
 
 .headerOrphan p {
-    font-size: 20px;
-    letter-spacing: 1px;
+  font-weight: 400;
+  font-family: "montserrat",sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 1px;
 }
 /* ----------------- END ORPHAN HEADER CSS ---------------*/
 
