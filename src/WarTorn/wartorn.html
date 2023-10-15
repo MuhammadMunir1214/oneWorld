@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./wartorn.css">
+    <link rel="stylesheet" href="./wartorn.css" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WarTorn</title>
@@ -12,6 +12,9 @@
     <script type="module" src="/src/main.jsx"></script>
     <div class="hero-wartorn">
       <div class="headerWartorn-text">
+        <video autoplay muted loop id="landingVideo">
+          <source src="/src/assets/warPage.mp4" type="video/mp4" />
+        </video>
         <h2>Understanding the War Torn Regions</h2>
         <h1>Standing With Those Affected</h1>
         <p>
@@ -21,15 +24,26 @@
     </div>
 
     <section class="container content-wartorn">
-      <h2 class="typing-effect" id="typeText"><em>"In the shadows of war, the light of charity shines the brightest."</em></h2>
+      <h2 class="typing-effect" id="typeText">
+        <em
+          >"In the shadows of war, the light of charity shines the
+          brightest."</em
+        >
+      </h2>
 
       <h3>How to Help</h3>
       <p>
-        Wars leave behind ruins and shattered lives. But from the ashes, we can rebuild and restore. However, those affected by war cannot do it alone. 
-        They need support from people like you. At "How to Help", we offer various avenues through which you can make a difference. 
-        From donations that will go directly to relief efforts, volunteering opportunities in war-torn areas, to raising awareness in your community about the realities of war. Every little bit helps. 
-        Your contribution, no matter how small, can bring warmth to a child freezing in a makeshift tent, bring medical aid to the injured, or help rebuild a school where education can flourish once again. 
-        Stand with us, extend your hand, and together, let's make a world of difference to those affected by war.
+        Wars leave behind ruins and shattered lives. But from the ashes, we can
+        rebuild and restore. However, those affected by war cannot do it alone.
+        They need support from people like you. At "How to Help", we offer
+        various avenues through which you can make a difference. From donations
+        that will go directly to relief efforts, volunteering opportunities in
+        war-torn areas, to raising awareness in your community about the
+        realities of war. Every little bit helps. Your contribution, no matter
+        how small, can bring warmth to a child freezing in a makeshift tent,
+        bring medical aid to the injured, or help rebuild a school where
+        education can flourish once again. Stand with us, extend your hand, and
+        together, let's make a world of difference to those affected by war.
       </p>
     </section>
     <!----------------Donation Page Impact Statistics--------------------->
@@ -77,7 +91,9 @@
         </div>
         <div class="stat-details">
           <span class="stat-number">2,000+</span>
-          <span class="stat-description">Trauma Counseling Sessions Offered</span>
+          <span class="stat-description"
+            >Trauma Counseling Sessions Offered</span
+          >
         </div>
       </div>
       <div class="stat">
@@ -86,134 +102,260 @@
         </div>
         <div class="stat-details">
           <span class="stat-number">1,000+</span>
-          <span class="stat-description">Jobs Created through Rehabilitation Programs</span>
+          <span class="stat-description"
+            >Jobs Created through Rehabilitation Programs</span
+          >
         </div>
       </div>
     </div>
 
-    <section class="container content-wartorn">
+    <section class="container">
       <div class="countries-wrapper">
-       <div class="country" data-country="Afghanistan">
-         <img src="../assets/Afghanistan.jpg" alt="Afghanistan Flag">
-         <div class="country-info">
-           <h3>Afghanistan</h3>
-           <p>For decades, Afghanistan has borne the brunt of global conflicts, leaving its beautiful landscapes marred and its innocent people suffering. 
-            Millions of Afghans, including countless children, have never known peace. Their resilience is awe-inspiring, but they need our help to rebuild their nation, secure education for their children, 
-            and create a promising future.
-           </p>
-           <a href="https://en.wikipedia.org/wiki/War_in_Afghanistan_(2001%E2%80%932021)" target="_blank" class="donate-btn">Learn More</a>
-         </div>
-       </div>
-       <div class="country" data-country="Central African Republic">
-        <img src="../assets/Central_African_Republic.jpg" alt="Central African Republic">
-        <div class="country-info">
-          <h3>Central African Republic</h3>
-          <p>The Central African Republic, with its rich culture and vast potential, has been trapped in cycles of violence and political instability. Countless families have been displaced, 
-            children orphaned, and dreams shattered. By extending our hand, we can provide hope and catalyze change in this resilient nation.
-          </p>
-          <a href="https://en.wikipedia.org/wiki/Central_African_Republic_Civil_War" target="_blank" class="donate-btn">Learn More</a>
+        <div class="centerCountry">
+          <div class="country" data-country="Afghanistan">
+            <img src="../assets/Afghanistan.jpg" alt="Afghanistan Flag" />
+            <div class="country-info">
+              <h3>Afghanistan</h3>
+              <p>
+                For decades, Afghanistan has borne the brunt of global
+                conflicts, leaving its beautiful landscapes marred and its
+                innocent people suffering. Millions of Afghans, including
+                countless children, have never known peace. Their resilience is
+                awe-inspiring, but they need our help to rebuild their nation,
+                secure education for their children, and create a promising
+                future.
+              </p>
+              <a
+                href="https://en.wikipedia.org/wiki/War_in_Afghanistan_(2001%E2%80%932021)"
+                target="_blank"
+                class="donate-btn"
+                >Learn More</a
+              >
+            </div>
+          </div>
+          <div class="country" data-country="Central African Republic">
+            <img
+              src="../assets/Central_African_Republic.jpg"
+              alt="Central African Republic"
+            />
+            <div class="country-info">
+              <h3>Central African Republic</h3>
+              <p>
+                The Central African Republic, with its rich culture and vast
+                potential, has been trapped in cycles of violence and political
+                instability. Countless families have been displaced, children
+                orphaned, and dreams shattered. By extending our hand, we can
+                provide hope and catalyze change in this resilient nation.
+              </p>
+              <a
+                href="https://en.wikipedia.org/wiki/Central_African_Republic_Civil_War"
+                target="_blank"
+                class="donate-btn"
+                >Learn More</a
+              >
+            </div>
+          </div>
+          <div class="country" data-country="Democratic Republic of the Congo">
+            <img
+              src="../assets/Democratic_Republic_of_the_Congo.jpg"
+              alt="Democratic Republic of the Congo"
+            />
+            <div class="country-info">
+              <h3>Democratic Republic of the Congo</h3>
+              <p>
+                Amidst the vast rainforests and mighty rivers of the DRC lies a
+                tale of endurance and hope. For years, this land of immense
+                natural wealth has witnessed conflicts that have left
+                communities torn and families devastated. Yet, the spirit of the
+                Congolese remains as vibrant as ever. As we reach out to support
+                them, we're not just aiding in rebuilding infrastructures; we're
+                restoring dreams, rekindling hopes, and reviving the heart of a
+                nation that has faced so much yet stands tall with undying
+                resilience.
+              </p>
+              <a
+                href="https://en.wikipedia.org/wiki/Second_Congo_War"
+                target="_blank"
+                class="donate-btn"
+                >Learn More</a
+              >
+            </div>
+          </div>
+          <div class="country" data-country="Iraq">
+            <img src="../assets/Iraq.jpg" alt="Iraq" />
+            <div class="country-info">
+              <h3>Iraq</h3>
+              <p>
+                Once the cradle of civilization, Iraq has faced years of
+                upheaval, war, and internal strife. Its people have showcased
+                indomitable spirit in the face of adversity. Let's come together
+                to support Iraqis in their quest for stability, peace, and
+                prosperity.
+              </p>
+              <a
+                href="https://en.wikipedia.org/wiki/Iraq_War"
+                target="_blank"
+                class="donate-btn"
+                >Learn More</a
+              >
+            </div>
+          </div>
+          <div class="country" data-country="Libya">
+            <img src="../assets/Libya.jpg" alt="Libya" />
+            <div class="country-info">
+              <h3>Libya</h3>
+              <p>
+                Libya, with its rich history and strategic significance, finds
+                itself in the throes of ongoing conflict. Yet, hope remains, and
+                with our collective efforts, Libya can reclaim its position as a
+                beacon of culture, prosperity, and peace in North Africa.
+              </p>
+              <a
+                href="https://en.wikipedia.org/wiki/Libyan_civil_war_(2014%E2%80%932020)"
+                target="_blank"
+                class="donate-btn"
+                >Learn More</a
+              >
+            </div>
+          </div>
+          <div class="country" data-country="Palestine">
+            <img src="../assets/Palestine.jpg" alt="Palestine" />
+            <div class="country-info">
+              <h3>Palestine</h3>
+              <p>
+                Nestled in the heart of the Middle East, Palestine stands as a
+                testament to the indomitable spirit of its people. Through
+                decades of challenges, displacements, and geopolitical
+                complexities, the Palestinian spirit remains unwavering. Their
+                rich tapestry of history, culture, and hope shines bright, even
+                in the face of adversity. Supporting Palestine means preserving
+                the dreams of countless children, fostering peace, and ensuring
+                that the melody of their heritage continues for generations to
+                come.
+              </p>
+              <a
+                href="https://en.wikipedia.org/wiki/Israeli%E2%80%93Palestinian_conflict"
+                target="_blank"
+                class="donate-btn"
+                >Learn More</a
+              >
+            </div>
+          </div>
+          <div class="country" data-country="Somalia">
+            <img src="../assets/Somalia.jpg" alt="Somalia" />
+            <div class="country-info">
+              <h3>Somalia</h3>
+              <p>
+                Despite its challenges, Somalia's spirit remains unbroken.
+                However, recurring droughts, political unrest, and other
+                challenges have taken their toll. Together, we can play a part
+                in ensuring that the people of Somalia thrive and that the
+                nation regains its vibrancy.
+              </p>
+              <a
+                href="https://en.wikipedia.org/wiki/Somali_Civil_War"
+                target="_blank"
+                class="donate-btn"
+                >Learn More</a
+              >
+            </div>
+          </div>
+          <div class="country" data-country="Ukraine">
+            <img src="../assets/Ukraine.jpg" alt="Ukraine" />
+            <div class="country-info">
+              <h3>Ukraine</h3>
+              <p>
+                Ukraine, rich in culture and spirit, has faced recent challenges
+                that have tested its resilience. Families have been separated,
+                and communities uprooted. By standing with Ukraine, we can help
+                its people rebuild and ensure that its unique identity thrives.
+              </p>
+              <a
+                href="https://en.wikipedia.org/wiki/Russo-Ukrainian_War"
+                target="_blank"
+                class="donate-btn"
+                >Learn More</a
+              >
+            </div>
+          </div>
+          <div class="country" data-country="Yemen">
+            <img src="../assets/Yemen.jpg" alt="Yemen" />
+            <div class="country-info">
+              <h3>Democratic Republic of the Congo</h3>
+              <p>
+                Yemen, the land of ancient history and unparalleled beauty, has
+                been overshadowed by a devastating conflict. Millions are on the
+                brink of famine, lacking basic necessities. It's our moral duty
+                to stand with the Yemeni people and help them reclaim their
+                right to a peaceful existence.
+              </p>
+              <a
+                href="https://en.wikipedia.org/wiki/Yemeni_civil_war_(2014%E2%80%93present)"
+                target="_blank"
+                class="donate-btn"
+                >Learn More</a
+              >
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="country" data-country="Democratic Republic of the Congo">
-        <img src="../assets/Democratic_Republic_of_the_Congo.jpg" alt="Democratic Republic of the Congo">
-        <div class="country-info">
-          <h3>Democratic Republic of the Congo</h3>
-          <p>Amidst the vast rainforests and mighty rivers of the DRC lies a tale of endurance and hope. For years, this land of immense natural wealth has witnessed conflicts that have left communities torn 
-            and families devastated. Yet, the spirit of the Congolese remains as vibrant as ever. As we reach out to support them, we're not just aiding in rebuilding infrastructures; we're restoring dreams, 
-            rekindling hopes, and reviving the heart of a nation that has faced so much yet stands tall with undying resilience.
-          </p>
-          <a href="https://en.wikipedia.org/wiki/Second_Congo_War" target="_blank" class="donate-btn">Learn More</a>
-        </div>
-      </div>
-      <div class="country" data-country="Iraq">
-        <img src="../assets/Iraq.jpg" alt="Iraq">
-        <div class="country-info">
-          <h3>Iraq</h3>
-          <p>Once the cradle of civilization, Iraq has faced years of upheaval, war, and internal strife. Its people have showcased indomitable spirit in the face of adversity. Let's come together to support Iraqis 
-            in their quest for stability, peace, and prosperity.
-          </p>
-          <a href="https://en.wikipedia.org/wiki/Iraq_War" target="_blank" class="donate-btn">Learn More</a>
-        </div>
-      </div>
-      <div class="country" data-country="Libya">
-        <img src="../assets/Libya.jpg" alt="Libya">
-        <div class="country-info">
-          <h3>Libya</h3>
-          <p>Libya, with its rich history and strategic significance, finds itself in the throes of ongoing conflict. Yet, hope remains, and with our collective efforts, Libya can reclaim its position as a beacon of 
-            culture, prosperity, and peace in North Africa.
-          </p>
-          <a href="https://en.wikipedia.org/wiki/Libyan_civil_war_(2014%E2%80%932020)" target="_blank" class="donate-btn">Learn More</a>
-        </div>
-      </div>
-      <div class="country" data-country="Palestine">
-        <img src="../assets/Palestine.jpg" alt="Palestine">
-        <div class="country-info">
-          <h3>Palestine</h3>
-          <p>Nestled in the heart of the Middle East, Palestine stands as a testament to the indomitable spirit of its people. Through decades of challenges, displacements, and geopolitical complexities, 
-            the Palestinian spirit remains unwavering. Their rich tapestry of history, culture, and hope shines bright, even in the face of adversity. Supporting Palestine means preserving the dreams of countless 
-            children, fostering peace, and ensuring that the melody of their heritage continues for generations to come.
-          </p>
-          <a href="https://en.wikipedia.org/wiki/Israeli%E2%80%93Palestinian_conflict" target="_blank" class="donate-btn">Learn More</a>
-        </div>
-      </div>
-      <div class="country" data-country="Somalia">
-        <img src="../assets/Somalia.jpg" alt="Somalia">
-        <div class="country-info">
-          <h3>Somalia</h3>
-          <p>Despite its challenges, Somalia's spirit remains unbroken. However, recurring droughts, political unrest, and other challenges have taken their toll. Together, we can play a part in ensuring that 
-            the people of Somalia thrive and that the nation regains its vibrancy.
-          </p>
-          <a href="https://en.wikipedia.org/wiki/Somali_Civil_War" target="_blank" class="donate-btn">Learn More</a>
-        </div>
-      </div>
-      <div class="country" data-country="Ukraine">
-        <img src="../assets/Ukraine.jpg" alt="Ukraine">
-        <div class="country-info">
-          <h3>Ukraine</h3>
-          <p>Ukraine, rich in culture and spirit, has faced recent challenges that have tested its resilience. Families have been separated, and communities uprooted. By standing with Ukraine, we can help its 
-            people rebuild and ensure that its unique identity thrives.
-          </p>
-          <a href="https://en.wikipedia.org/wiki/Russo-Ukrainian_War" target="_blank" class="donate-btn">Learn More</a>
-        </div>
-      </div>
-      <div class="country" data-country="Yemen">
-        <img src="../assets/Yemen.jpg" alt="Yemen">
-        <div class="country-info">
-          <h3>Democratic Republic of the Congo</h3>
-          <p>Yemen, the land of ancient history and unparalleled beauty, has been overshadowed by a devastating conflict. Millions are on the brink of famine, lacking basic necessities. It's our moral duty to 
-            stand with the Yemeni people and help them reclaim their right to a peaceful existence.
-          </p>
-          <a href="https://en.wikipedia.org/wiki/Yemeni_civil_war_(2014%E2%80%93present)" target="_blank" class="donate-btn">Learn More</a>
-        </div>
-      </div>
       </div>
     </section>
-   
-  <!--------------CAROUSEL SECTION 1 BEGIN------------>
-<div class="carousel-sectionOne">
-  <div class="carousel-container carousel-one">
-    <div class="image-container">
-      <img class="carousel-img img1" src="../assets/charity1.jpg" alt="image1" />
-      <img class="carousel-img img2" src="../assets/charity2.jpg" alt="image2" />
-      <img class="carousel-img img3" src="../assets/charity3.jpg" alt="image3" />
-      <img class="carousel-img img4" src="../assets/charity4.jpg" alt="image4" />
-    </div>
-  </div>
-</div>
-<!--------------CAROUSEL SECTION 1 END------------>
 
-<!--------------CAROUSEL SECTION 2 BEGIN------------>
-<div class="carousel-sectionTwo">
-  <div class="carousel-container carousel-two">
-    <div class="image-container">
-      <img class="carousel-img img5" src="../assets/charity5.jpg" alt="image5" />
-      <img class="carousel-img img6" src="../assets/charity6.jpg" alt="image6" />
-      <img class="carousel-img img7" src="../assets/charity7.jpg" alt="image7" />
-      <img class="carousel-img img8" src="../assets/charity8.jpg" alt="image8" />
-    </div>
-  </div>
-</div>
-<!--------------CAROUSEL SECTION 2 END------------>
+    <!--------------CAROUSEL SECTION 1 BEGIN------------>
+    <section class="carousel-section">
+      <div class="carousel">
+        <div class="image-container">
+          <img
+            class="carousel-img img1"
+            src="../assets/charity1.jpg"
+            alt="image1"
+          />
+          <img
+            class="carousel-img img2"
+            src="../assets/charity2.jpg"
+            alt="image2"
+          />
+          <img
+            class="carousel-img img3"
+            src="../assets/charity3.jpg"
+            alt="image3"
+          />
+          <img
+            class="carousel-img img4"
+            src="../assets/charity4.jpg"
+            alt="image4"
+          />
+        </div>
+      </div>
+      <!--------------CAROUSEL SECTION 1 END------------>
+
+      <!--------------CAROUSEL SECTION 2 BEGIN------------>
+      <div class="carousel">
+        <div class="image-container">
+          <img
+            class="carousel-img img5"
+            src="../assets/charity5.jpg"
+            alt="image5"
+          />
+          <img
+            class="carousel-img img6"
+            src="../assets/charity6.jpg"
+            alt="image6"
+          />
+          <img
+            class="carousel-img img7"
+            src="../assets/charity7.jpg"
+            alt="image7"
+          />
+          <img
+            class="carousel-img img8"
+            src="../assets/charity8.jpg"
+            alt="image8"
+          />
+        </div>
+      </div>
+    </section>
+    <!--------------CAROUSEL SECTION 2 END------------>
 
     <!--------------DONATE FORM HTML------------>
 
@@ -225,7 +367,9 @@
             <label for="countries">Countries</label>
             <select name="Countries" id="Countries">
               <option value="afghanistan">Afghanistan</option>
-              <option value="central-african-republic">Central African Republic</option>
+              <option value="central-african-republic">
+                Central African Republic
+              </option>
               <option value="congo">Democratic Republic of the Congo</option>
               <option value="iraq">Iraq</option>
               <option value="libya">Libya</option>
@@ -277,11 +421,12 @@
           placeholder="XXXX-XXXX-XXXX-XXXX"
         />
 
-  <!----------------School Donation Page Donate Button--------------------->
-        <button class="orphanButton" type="submit">
+        <!----------------School Donation Page Donate Button--------------------->
+        <button class="warTornButton" type="submit">
           Donate
           <span class="circle"></span>
-        </button>      </form>
+        </button>
+      </form>
     </div>
 
     <div id="footer"></div>
