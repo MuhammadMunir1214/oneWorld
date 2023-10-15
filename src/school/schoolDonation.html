@@ -13,7 +13,9 @@
     <script type="module" src="/src/main.jsx"></script>
     <div class="headerSchool">
       <div class="headerSchool-text">
-        <video autoplay muted loop id="landingVideo"><source src="/src/assets/schoolPage.mp4" type="video/mp4" /></video>
+        <video autoplay muted loop id="landingVideo">
+          <source src="/src/assets/schoolPage.mp4" type="video/mp4" />
+        </video>
         <h2>Donate For Schools</h2>
         <h1>Together, We Can</h1>
         <p>
@@ -106,7 +108,7 @@
     <!----------------School Donation Page Donation Form--------------------->
     <div class="donate-form">
       <h2>OneWorld School Donations</h2>
-      <form>
+      <form action="/src/school/schoolDonation.html" method="GET">
         <div class="form-group">
           <div class="column">
             <label for="firstName">First Name*</label>
