@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Leckerli+One&family=Merriweather&family=Montserrat&family=Poppins:wght@200;300;500;600&family=Roboto:wght@400;700&family=Space+Mono&display=swap");
 
 .footer {
-  margin-top: 30px;
+  margin-top: 20px;
   background: linear-gradient(
     to right,
     #000000,
@@ -13,6 +13,7 @@
   padding: 20px;
   color: white;
   font-family: "Montserrat", sans-serif;
+  box-shadow: 5px 5px 8px 15px rgb(95, 94, 94);
 }
 
 .footer-content {

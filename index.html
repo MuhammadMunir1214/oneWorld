@@ -19,6 +19,7 @@
     <script type="module" src="/src/main.jsx"></script>
     <div class="hero">
       <div class="container">
+        <video autoplay muted loop id="landingVideo"><source src="/src/assets/landing_video.mp4" type="video/mp4" /></video>
         <h2>Spreading Light To Those In Darkness</h2>
 
         <!--This was given an ID so we can use the Auto Text Effect-->
@@ -55,21 +56,54 @@
       </div>
       </div>
       <div class="content1-midsection2">
-        <div class="img1">
+        <div class="landingimg1">
           <img
             src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
             alt="kids smiling at camera"
           />
         </div>
-        <div class="img2">
+        <div class="landingimg2">
           <img
             src="https://images.unsplash.com/photo-1518949142393-f1d68174c92a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
             alt="poor child"
           />
         </div>
       </div>
-    </div>
     </section>
+    <div class="slider-container">
+      <div class="left-slide">
+        <div style="background-color: rgb(199, 6, 38, .3)">
+          <h1>Aisha</h1>
+          <p>OneWorld Charity has made a real difference in my community. They have provided educational resources and support, giving young individuals like me the chance to dream big and reach for the stars.</p>
+        </div>
+        <div style="background-color: rgb(42, 134, 186, .3)">
+          <h1>Emma</h1>
+          <p>OneWorld Charity has been a beacon of hope for communities in need. Their dedication and commitment to creating a better world have inspired me to contribute and be part of their amazing initiatives.</p>
+        </div>
+        <div style="background-color: rgb(37, 46, 51, .3)">
+          <h1>Malik</h1>
+          <p>Being a part of OneWorld Charity's volunteering team has shown me the power of collective action. We are making a tangible difference, and I'm proud to stand with an organization that embodies unity and equality.</p>
+        </div>
+        <div style="background-color: rgba(255, 136, 0, 0.3)">
+          <h1>Micheal</h1>
+          <p>I've had the privilege of witnessing the positive impact OneWorld Charity has on underprivileged children. Their educational programs are changing lives and opening doors to a brighter future for the next generation.</p>
+        </div>
+      </div>
+      <div class="right-slide">
+        <div style="background-image: url('https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80')"></div>
+        <div style="background-image: url('https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')"></div>
+        <div style="background-image: url('https://images.unsplash.com/photo-1520466809213-7b9a56adcd45?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80')"></div>
+        <div style="background-image: url('https://images.unsplash.com/photo-1589156280159-27698a70f29e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1972&q=80')"></div>
+      </div>
+      <div class="action-buttons">
+        <button class="down-button">
+          <i class="fas fa-arrow-down"></i>
+        </button>
+        <button class="up-button">
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </div>
+    </div>
     <div id="footer"></div>
     <script src="./src/index.js"></script>
   </body>

@@ -9,7 +9,8 @@
   color: #222;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom, #f0e8e8af 0%, #433617 50%, #8f6a1a 100%);
+  /* background: linear-gradient(to bottom, #f0e8e8af 0%, #433617 50%, #8f6a1a 100%); */
+  background: linear-gradient(to right, rgb(220, 219, 219), rgb(200, 199, 199));
 }
 
 .container {
@@ -18,11 +19,11 @@
 }
 
 .hero-wartorn {
-  background-image: url("../assets/wartorn-country1.jpg");
+  /* background-image: url("../assets/wartorn-country1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom center;
-  height: 100vh; /* Reduced height */
+  background-position: bottom center; */
+  height: 100vh;
   color: white;
   display: flex;
   justify-content: center;
@@ -53,14 +54,14 @@
 .hero-wartorn h1 {
   font-family: "Playfair Display", sans-serif;
   font-size: 72px;
-  font-weight: 700; 
+  font-weight: 700;
   line-height: 90px;
   margin: -20px 0 90px;
 }
 
-.hero-wartorn h2{
+.hero-wartorn h2 {
   font-size: 20px;
-  font-family: "montserrat",sans-serif;
+  font-family: "montserrat", sans-serif;
   font-weight: 600;
   line-height: 28px;
   margin-bottom: 50px;
@@ -68,29 +69,50 @@
 
 .hero-wartorn p {
   font-weight: 400;
-  font-family: "montserrat",sans-serif;
+  font-family: "montserrat", sans-serif;
   font-size: 18px;
   line-height: 30px;
   letter-spacing: 1px;
 }
+
+.content-wartorn {
+  margin-top: 1rem !important;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin-left: 30px;
+  margin-right: 30px;
+  background-color: #dedede;
+}
+
+em {
+  line-height: 30px;
+}
+
 .content-wartorn h2,
 .content-wartorn h3 {
-  font-size: 130%; /* Adjusted font size */
-  margin: 15px 0;  /* Adjusted margin */
+  font-family: "Playfair Display", sans-serif;
+  font-size: 150%; /* Adjusted font size */
+  margin: 15px 0; /* Adjusted margin */
 }
 
 .content-wartorn p {
-  color: #e8e1e1;
+  font-family: "montserrat";
+  color: black;
   line-height: 25px; /* Adjusted line height */
-  letter-spacing: 1.2px;
+  letter-spacing: 1px;
+  font-weight: lighter;
 }
 
 .content-wartorn .typing-effect {
   white-space: nowrap;
   overflow: hidden;
-  border-right: .15em solid orange;
+  border-right: 0.15em solid #f78732;
   width: 0;
-  color: #e2f109;
+  background-image: linear-gradient(60deg, #f98669, #f78732);
+  -webkit-background-clip: text;
+  color: transparent !important;
   line-height: 25px;
   letter-spacing: 1.2px;
 }
@@ -105,7 +127,7 @@
   }
   to {
     width: 100%;
-    border-right: .15em solid transparent;
+    border-right: 0.15em solid transparent;
   }
 }
 
@@ -114,7 +136,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  background: linear-gradient(to bottom, #f0e8e8af 0%, #433617 50%, #8f6a1a 100%);
+  /* background: linear-gradient(to bottom, #f0e8e8af 0%, #433617 50%, #8f6a1a 100%); */
+  background-color: rgb(130, 129, 129);
+
   padding: 20px;
   border-radius: 10px;
   margin: 20px 0;
@@ -123,35 +147,46 @@
 .impact-statistics h3 {
   width: 100%;
   text-align: center;
-  font-size: 1.8em;
   margin-bottom: 20px;
-  color: #333;
+  font-size: 1.8em;
 }
 
 .stat {
   flex: 1;
   margin: 10px;
   background: rgb(151, 49, 15);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 8px;
   padding: 20px;
   min-width: 180px;
   text-align: center;
-  transition: transform 0.2s, box-shadow 0.2s; /* smooth hover effect */
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 /* Colorful backgrounds for the boxes */
-.stat:nth-child(1) { background: #b25d5d; } /* Light red */
-.stat:nth-child(2) { background: #79ba7c; } /* Light green */
-.stat:nth-child(3) { background: #64B5F6; } /* Light blue */
-.stat:nth-child(4) { background: #4f4fff; } /* Yellow */
-.stat:nth-child(5) { background: #BA68C8; } /* Purple */
-.stat:nth-child(6) { background: #cf775d; } /* Orange */
-
+.stat:nth-child(1) {
+  background: #b25d5d;
+} /* Light red */
+.stat:nth-child(2) {
+  background: #79ba7c;
+} /* Light green */
+.stat:nth-child(3) {
+  background: #64b5f6;
+} /* Light blue */
+.stat:nth-child(4) {
+  background: #4f4fff;
+} /* Yellow */
+.stat:nth-child(5) {
+  background: #ba68c8;
+} /* Purple */
+.stat:nth-child(6) {
+  background: #cf775d;
+} /* Orange */
 
 .stat:hover {
+  cursor: pointer;
   transform: scale(1.05); /* enlarge slightly */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* darker shadow for depth */
+  box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.281);
 }
 
 .stat-icon {
@@ -163,51 +198,74 @@
 .stat-number {
   font-size: 1.6em;
   font-weight: bold;
-  color: white; /* white color for numbers */
+  color: white; /*White color for numbers*/
 }
 
 .stat-description {
   display: block;
   margin-top: 5px;
-  color: white; /* white color for description */
+  font-size: 16px;
+  font-weight: bold;
+  color: black; /* white color for description */
 }
 /*Statistics Styling END*/
 
 .countries-wrapper {
   position: relative;
   width: 100%;
-  height: 30vh; /* Adjusted height */
+  height: 70vh; /* Adjusted height */
+  margin-bottom: 8rem;
 }
 
 .country {
   position: absolute;
   width: 20%;
   height: 20%;
-  transform-origin: center center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   opacity: 0.8;
   transition: opacity 0.3s;
-  margin-top: 300px;
+  transform: translatex(-50%);
+}
+
+.countryCenter {
+  height: 70vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .country img {
-  max-width: 50%;
+  object-fit: cover;
+  max-width: 70%;
   display: block;
-  border-radius: 50%;
+  height: 100%;
+  border-radius: 20%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: transform 0.3s;
+}
+
+.country img:hover {
+  box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.281);
+  transform: scale(1.5);
 }
 
 .country-info {
   display: none;
+  font-family: "montserrat", sans-serif;
+}
+
+.country-info h3 {
+  font-family: "PlayFair Display", sans-serif;
+  font-weight: 700;
 }
 
 .country:hover {
-    z-index: 100; /* Increased z-index value for the hovered country */
+  z-index: 8; /* Increased z-index value for the hovered country */
+  transform-origin: left top;
 }
 
 .country:hover .country-info {
-    z-index: 101; /* Ensure the hover text is above the hovered country */
+  z-index: 9; /* Ensure the hover text is above the hovered country */
 }
 
 .country:hover .country-info {
@@ -231,25 +289,26 @@
   opacity: 1;
 }
 
-/*------------- COMMON STYLES FOR BOTH CAROUSELS --------------*/
+/*------------- COMMON STYLES FOR CAROUSELS --------------*/
 .carousel-section {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 0 5%; /* Adjust the padding value if you want more or less space from the edges */
-  position: relative; /* Added this line */
+  justify-content: space-between;
+  margin-top: auto;
+  color: rgb(0, 0, 0);
+  /* background: linear-gradient(to right, rgb(220, 219, 219), rgb(200, 199, 199)); */
+  background-color: rgb(130, 129, 129);
+  padding: 2rem 0;
 }
 
-.carousel-section.carousel-two {
-  justify-content: flex-end;
-}
-.carousel-container {
+.carousel {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   height: 530px;
   width: 500px;
   overflow: hidden;
   position: relative;
   display: flex;
+  margin-left: 30px;
   border-radius: 20px;
 }
 
@@ -265,35 +324,20 @@
   border-radius: 20px;
 }
 
-.carousel-one, .carousel-two {
-  width: 20%;  /* Change from a fixed 500px to a relative percentage */
-}
-
-.img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8 {
-  width: 100%;  /* Images will take the full width of their container */
-}
-
 .carousel-img {
   flex-shrink: 0;
 }
 
-/*--------------CAROUSEL SECTION 1 STYLE --------------*/
-
-.carousel-one .img1,
-.carousel-one .img3 {
+.img1,
+.img3,
+.img5,
+.img7 {
   opacity: 0.85;
 }
-
-/*--------------CAROUSEL SECTION 2 STYLE --------------*/
-
-.carousel-two .img5,
-.carousel-two .img7 {
-  opacity: 0.85;
-}
-
 
 /* ----------------- DONATE FORM CSS -----------------*/
 .donate-form {
+  font-family: "Montserrat", sans-serif;
   background-color: white;
   border-radius: 20px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
@@ -301,7 +345,7 @@
   text-align: center;
   margin: 20px auto;
   max-width: 600px;
-  margin-top: 60px;
+  margin: 60px auto;
 }
 
 .donate-form h2 {
@@ -377,23 +421,26 @@ textarea {
 .countries-dropdown {
   width: 100%;
   display: flex;
-  flex-direction: column;   /* Stack items vertically */
-  align-items: center;      /* Horizontally center the items */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Horizontally center the items */
   margin-bottom: 1em;
 }
 
 .countries-dropdown label {
-  margin-bottom: 0.5em;     /* Space between the label and dropdown */
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 0.5em; /* Space between the label and dropdown */
 }
 
 .countries-dropdown select {
   max-width: 300px;
   width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
-
 /* Style the donate button */
-.orphanButton {
+.warTornButton {
   background-color: #007bff;
   color: #fff;
   border: 1px #007bff;
@@ -409,11 +456,11 @@ textarea {
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.orphanButton:focus {
+.warTornButton:focus {
   outline: none;
 }
 
-.orphanButton .circle {
+.warTornButton .circle {
   position: absolute;
   background-color: rgba(255, 255, 255, 0.5);
   width: 100px;
@@ -425,8 +472,8 @@ textarea {
 
 @keyframes scale {
   to {
-      transform: translate(-50%, -50%) scale(3);
-      opacity: 0;
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
   }
 }
 /* ----------------- END DONATE FORM CSS -----------------*/
