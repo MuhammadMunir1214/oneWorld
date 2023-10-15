@@ -1,43 +1,41 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&family=Montserrat&family=Playfair+Display&display=swap");
 
-
 /* ----------------- ORPHAN HEADER CSS ---------------*/
 .OrphanDonation {
-   
-    font-family: "Open Sans", sans-serif;
-    background-color: #b3b3b3;
+  font-family: "Open Sans", sans-serif;
+  background-color: #b3b3b3;
 }
 
 .headerOrphan {
-    background-image: url("../assets/imdadul-hussain-YiA4wqVpLQQ-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom center;
-    height: 100vh;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    margin-bottom: 20px;
-    z-index: -2;
-    margin-bottom: 0;
+  background-image: url("../assets/imdadul-hussain-YiA4wqVpLQQ-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+  z-index: -2;
+  margin-bottom: 0;
 }
-.headerOrphan::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: -1;
+.headerOrphan::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
 }
 
 .headerOrphan-text {
-    flex: 1;
-    padding: 100px;
+  flex: 1;
+  padding: 100px;
 }
 
 .headerOrphan h1 {
@@ -61,40 +59,40 @@
   font-family: "montserrat",sans-serif;
   font-size: 18px;
   line-height: 30px;
+
   letter-spacing: 1px;
 }
 /* ----------------- END ORPHAN HEADER CSS ---------------*/
 
-
 /* ----------------- DONATE FORM CSS -----------------*/
 .donate-form h2 {
-    text-align: center;
+  text-align: center;
 }
-.donate-form{
-    background-color: rgb(170 166 166);
-    padding: 50px;
-    margin-bottom: -30px;
+.donate-form {
+  background-color: rgb(170 166 166);
+  padding: 50px;
+  margin-bottom: -30px;
 }
 .donate-form form {
-    max-width: 600px;
-    margin: 20px auto;
+  max-width: 600px;
+  margin: 20px auto;
 }
 
 .form-group {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
 }
 
 .column {
-    flex-basis: calc(50% - 10px);
+  flex-basis: calc(50% - 10px);
 }
 
 label {
-    display: block;
-    margin-top: 15px;
-    margin-bottom: 5px;
-    font-weight: bold;
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
 input[type="text"],
@@ -102,184 +100,179 @@ input[type="tel"],
 input[type="email"],
 input[type="number"],
 textarea {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 .OrphanButton {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin-top: 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .OrphanButton:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 /* ----------------- END DONATE FORM CSS -----------------*/
 
-
-
 /*----------------- STATISTICS CSS -----------------*/
 .impact-statistics {
-    background-color: rgb(124, 124, 124);
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    padding:50px;
+  background-color: rgb(124, 124, 124);
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 50px;
 }
 
 .impact-statistics h3 {
-    text-align: center;
-    margin-bottom: 20px;
-    margin-bottom: 20px;
-    font-size: 24px;
-    padding-right: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  padding-right: 10px;
 }
 
 .stat {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 24%;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 24%;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .stat:hover {
-    background-color: #000000;
-    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.281);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-    transform: scale(1.05);
+  background-color: #000000;
+  box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.281);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  transform: scale(1.05);
 }
 
 .stat-icon {
-    font-size: 36px;
-    margin-bottom: 10px;
+  font-size: 36px;
+  margin-bottom: 10px;
 }
 
 .stat-number {
-    font-size: 24px;
-    font-weight: bold;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .stat-description {
-    text-align: center;
-    font-size: 14px;
-    color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 14px;
+  color: rgb(0, 0, 0);
 }
 
-
 .stat:nth-child(1) {
-    background-color: #007bff;
-    color: #fff;
+  background-color: #007bff;
+  color: #fff;
 }
 
 .stat:nth-child(2) {
-    background-color: #176e17;
-    color: #fff;
+  background-color: #176e17;
+  color: #fff;
 }
 
 .stat:nth-child(3) {
-    background-color: #bd951c;
-    color: #ffffff;
+  background-color: #bd951c;
+  color: #ffffff;
 }
 
 .stat:nth-child(4) {
-    background-color: #9e1c29;
-    color: #fff;
+  background-color: #9e1c29;
+  color: #fff;
 }
 
 @media (max-width: 768px) {
-    .impact-statistics {
-        flex-direction: column;
-        align-items: center;
-    }
+  .impact-statistics {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .stat {
-        width: 100%;
-        margin-bottom: 50px;
-    }
+  .stat {
+    width: 100%;
+    margin-bottom: 50px;
+  }
 }
 /*----------------- END STATISTICS CS -----------------S*/
 
+/* -----------------CAROUSEL CSS -----------------*/ /* USING UDEMY COURSE */
 
-
-/* -----------------CAROUSEL CSS -----------------*/      /* USING UDEMY COURSE */
-
-.carousel-section { 
-    display: flex;
-    align-items: center;
-    height: 600px;
-    background-color: rgb(154, 154, 154);
-    color: rgb(0, 0, 0);
+.carousel-section {
+  display: flex;
+  align-items: center;
+  height: 600px;
+  background-color: rgb(154, 154, 154);
+  color: rgb(0, 0, 0);
 }
 
 .carousel {
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    height: 530px;
-    width: 500px;
-    overflow: hidden;
-    position: relative;
-    display: flex;
-    margin-left: 30px;
-    border-radius: 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  height: 530px;
+  width: 500px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  margin-left: 30px;
+  border-radius: 20px;
 }
 .img1,
 .img3 {
-    opacity: 0.85;
+  opacity: 0.85;
 }
 
 .img1,
 .img2,
 .img3,
 .img4 {
-    width: 500px;
-    object-fit: cover;
-    border-radius: 20px;
+  width: 500px;
+  object-fit: cover;
+  border-radius: 20px;
 }
 
 .image-container {
-    display: flex;
-    transform: translateX(0);
-    transition: transform 0.5s ease-in-out;
+  display: flex;
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
 }
 
 /*about section for the carousel section*/
 .carousel-about {
-    flex: 1;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    text-align: center;
-    margin-left:30px;
-    margin-right: 30px;
-    background-color: #dedede;
+  flex: 1;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin-left: 30px;
+  margin-right: 30px;
+  background-color: #dedede;
 }
 
 .carousel-about h2 {
-    font-size: 30px;
-    margin-bottom: 20px;
-    color: #333;
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #333;
 }
 
 .carousel-about p {
-    font-size: 18px;
-    color: #433722;
-    line-height: 1.5;
-    font-family: 'Poppins';
+  font-size: 18px;
+  color: #433722;
+  line-height: 1.5;
+  font-family: "Poppins";
 }
 /*----------------- END CAROUSEL CSS -----------------*/
