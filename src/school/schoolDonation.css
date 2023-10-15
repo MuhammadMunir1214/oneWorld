@@ -71,17 +71,26 @@
 /* ----------END SCHOOL DONATION PAGE HEADER CSS---------- */
 
 /* ----------School Donation Page DONATE FORM CSS---------- */
-.donate-form h2 {
+.donate-form {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  padding: 40px;
   text-align: center;
+  margin: 20px auto;
+  max-width: 600px;
 }
 
-.donate-form form {
-  max-width: 600px;
-  margin: 20px auto;
+.donate-form h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
 }
 
 .form-group {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 15px;
 }
@@ -109,19 +118,54 @@ textarea {
   border-radius: 5px;
 }
 
+.donation-amount {
+  margin-top: 10px;
+}
+
+.donation-amount label {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.custom-amount {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.checkbox-label {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-label input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+#creditCard {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* Style the donate button */
 .schoolButton {
   background-color: #007bff;
   color: #fff;
   border: 1px #007bff;
-  font-size: 14px;
+  font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  padding: 20px 30px;
+  padding: 15px 30px;
   overflow: hidden;
-  margin: 10px 0;
+  margin: 20px 0;
   position: relative;
   cursor: pointer;
   width: 100%;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .schoolButton:focus {
@@ -206,17 +250,17 @@ textarea {
 }
 
 .stat:nth-child(2) {
-  background-color: #176e17;
+  background-color: #189da1;
   color: #fff;
 }
 
 .stat:nth-child(3) {
-  background-color: #bd951c;
+  background-color: #6ea802;
   color: #ffffff;
 }
 
 .stat:nth-child(4) {
-  background-color: #9e1c29;
+  background-color: #91006c;
   color: #fff;
 }
 
@@ -275,7 +319,7 @@ textarea {
 .carousel-about {
   flex: 1;
   padding: 40px;
-  border-radius: 8px;
+  border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   text-align: center;
   margin-left: 30px;
@@ -296,3 +340,90 @@ textarea {
   font-family: "Poppins";
 }
 /* ----------END SCHOOL DONATION PAGE CAROUSEL CSS---------- */
+
+/* ----------School Donation Page Donation Info CSS---------- */
+.wrapper {
+  background: white;
+  padding: 40px 60px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  height: 520px;
+  width: 500px;
+  margin-left: 20px;
+  margin-right: 30px;
+  flex: 0.8;
+}
+
+.wrapper h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.progress-bar-container {
+  height: 50px;
+  border: 1px solid #5c5c5c;
+  background-color: #f8f8f8;
+  border-radius: 25px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 68%;
+  background-color: #176e17;
+  text-align: right;
+  line-height: 50px;
+  padding-right: 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 25px 0 0 25px;
+  animation: progressBarAnimation 4s linear infinite;
+  background: linear-gradient(
+    90deg,
+    #ff5733 0%,
+    #ffcc29 20%,
+    #35d0ba 40%,
+    #007bff 60%,
+    #91006c 80%,
+    #ff5733 100%
+  );
+  background-size: 500% 100%;
+  background-position: 100% 0;
+}
+
+@keyframes progressBarAnimation {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+.donation-goal {
+  font-weight: bold;
+  margin: 10px 0;
+  font-size: 1.2em;
+  color: #555;
+}
+
+.donation-info h2 {
+  color: #444;
+  border-bottom: 2px solid #6abc37;
+  display: inline-block;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.donation-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.donation-info li {
+  margin-bottom: 10px;
+  color: #666;
+}
+/* ----------END SCHOOL DONATION PAGE DONATION INFO CSS---------- */
