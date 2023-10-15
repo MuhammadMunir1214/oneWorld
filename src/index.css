@@ -15,6 +15,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  background: rgba(230, 229, 229, 0.994);
 }
 
 .container {
@@ -73,18 +74,21 @@ body {
 
 .content1 {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 
 .content1 h2 {
+  font-size: 18px;
   font-family: "Montserrat", sans-serif;
 }
 
 .content1 h1 {
+  font-size: 39px;
+  font-weight: 700px;
   font-family: "Playfair Display", sans-serif;
 }
 
@@ -99,9 +103,9 @@ body {
   width: 100%;
 }
 
-.content1-midsection .img2 {
-  height: 15rem;
-  width: 15rem;
+.content1-midsection2 .img2 {
+  height: 20rem;
+  width: 20rem;
 }
 
 .img2 img {
@@ -130,4 +134,51 @@ body {
 
 .text input:focus {
   outline: none;
+  
+.midCards {
+  display: flex;
+}
+
+.content1-mission {
+  border: 4px solid transparent;
+  border-image: linear-gradient(to right, #ff7e5f, #feb47b);
+  border-image-slice: 1;
+  background: linear-gradient(to right, #ffffff, #dddddd);
+  margin: 2rem;
+  padding: 2rem;
+}
+
+.content1-midsection2 {
+  position: relative;
+  margin-left: 2rem;
+}
+
+.img2 {
+  position: absolute;
+  right: -10vw;
+  bottom: -14vh;
+}
+
+.img1::before,
+.img2::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 5px solid rgba(255, 165, 0, 0.5);
+  top: -5px;
+  left: -5px;
+}
+
+.content1-mission .fa {
+  color: royalblue;
+}
+
+.content1-mission .title {
+  color: black;
+  margin-left: 5px;
+  font-family: "montserrat", sans-serif;
+  letter-spacing: 3px;
+  line-height: 20px;
+
 }

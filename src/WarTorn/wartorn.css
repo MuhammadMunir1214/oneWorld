@@ -4,11 +4,12 @@
   box-sizing: border-box;
 }
 
-body {
+.wartorn {
   font-family: "Open Sans", sans-serif;
   color: #222;
   margin: 0;
   padding: 0;
+  background: linear-gradient(to bottom, #f0e8e8af 0%, #433617 50%, #8f6a1a 100%);
 }
 
 .container {
@@ -21,7 +22,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
-  height: 30vh; /* Reduced height */
+  height: 100vh; /* Reduced height */
   color: white;
   display: flex;
   justify-content: center;
@@ -29,6 +30,8 @@ body {
   text-align: center;
   position: relative;
   margin-bottom: 20px;
+  z-index: -2;
+  margin-bottom: 0;
 }
 
 .hero-wartorn::before {
@@ -38,9 +41,38 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
 }
 
+.headerWartorn-text {
+  flex: 1;
+  padding: 100px;
+}
+
+.hero-wartorn h1 {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 72px;
+  font-weight: 700; 
+  line-height: 90px;
+  margin: -20px 0 90px;
+}
+
+.hero-wartorn h2{
+  font-size: 20px;
+  font-family: "montserrat",sans-serif;
+  font-weight: 600;
+  line-height: 28px;
+  margin-bottom: 50px;
+}
+
+.hero-wartorn p {
+  font-weight: 400;
+  font-family: "montserrat",sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
 .content-wartorn h2,
 .content-wartorn h3 {
   font-size: 130%; /* Adjusted font size */
@@ -48,10 +80,98 @@ body {
 }
 
 .content-wartorn p {
-  color: #555;
+  color: #e8e1e1;
   line-height: 25px; /* Adjusted line height */
   letter-spacing: 1.2px;
 }
+
+.content-wartorn .typing-effect {
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: .15em solid orange;
+  width: 0;
+  color: #e2f109;
+  line-height: 25px;
+  letter-spacing: 1.2px;
+}
+
+.content-wartorn .typing-effect.start-typing {
+  animation: typing 5s steps(70, end) forwards;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+    border-right: .15em solid transparent;
+  }
+}
+
+/*Statistics Styling BEGIN*/
+.impact-statistics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background: linear-gradient(to bottom, #f0e8e8af 0%, #433617 50%, #8f6a1a 100%);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.impact-statistics h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.stat {
+  flex: 1;
+  margin: 10px;
+  background: rgb(151, 49, 15);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  min-width: 180px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s; /* smooth hover effect */
+}
+
+/* Colorful backgrounds for the boxes */
+.stat:nth-child(1) { background: #b25d5d; } /* Light red */
+.stat:nth-child(2) { background: #79ba7c; } /* Light green */
+.stat:nth-child(3) { background: #64B5F6; } /* Light blue */
+.stat:nth-child(4) { background: #4f4fff; } /* Yellow */
+.stat:nth-child(5) { background: #BA68C8; } /* Purple */
+.stat:nth-child(6) { background: #cf775d; } /* Orange */
+
+
+.stat:hover {
+  transform: scale(1.05); /* enlarge slightly */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* darker shadow for depth */
+}
+
+.stat-icon {
+  font-size: 2em;
+  color: white; /* white color for icons to contrast colorful backgrounds */
+  margin-bottom: 10px;
+}
+
+.stat-number {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: white; /* white color for numbers */
+}
+
+.stat-description {
+  display: block;
+  margin-top: 5px;
+  color: white; /* white color for description */
+}
+/*Statistics Styling END*/
 
 .countries-wrapper {
   position: relative;
@@ -69,6 +189,7 @@ body {
   transform: translate(-50%, -50%);
   opacity: 0.8;
   transition: opacity 0.3s;
+  margin-top: 300px;
 }
 
 .country img {
@@ -102,6 +223,210 @@ body {
   border-radius: 10px;
 }
 
+.countries-wrapper p {
+  color: #888549;
+}
+
 .country:hover {
   opacity: 1;
 }
+
+/*------------- COMMON STYLES FOR BOTH CAROUSELS --------------*/
+.carousel-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%; /* Adjust the padding value if you want more or less space from the edges */
+  position: relative; /* Added this line */
+}
+
+.carousel-section.carousel-two {
+  justify-content: flex-end;
+}
+.carousel-container {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  height: 530px;
+  width: 500px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  border-radius: 20px;
+}
+
+.image-container {
+  display: flex;
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-img {
+  width: 500px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.carousel-one, .carousel-two {
+  width: 20%;  /* Change from a fixed 500px to a relative percentage */
+}
+
+.img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8 {
+  width: 100%;  /* Images will take the full width of their container */
+}
+
+.carousel-img {
+  flex-shrink: 0;
+}
+
+/*--------------CAROUSEL SECTION 1 STYLE --------------*/
+
+.carousel-one .img1,
+.carousel-one .img3 {
+  opacity: 0.85;
+}
+
+/*--------------CAROUSEL SECTION 2 STYLE --------------*/
+
+.carousel-two .img5,
+.carousel-two .img7 {
+  opacity: 0.85;
+}
+
+
+/* ----------------- DONATE FORM CSS -----------------*/
+.donate-form {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 600px;
+  margin-top: 60px;
+}
+
+.donate-form h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.column {
+  flex-basis: calc(50% - 10px);
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.donation-amount {
+  margin-top: 10px;
+}
+
+.donation-amount label {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.custom-amount {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.checkbox-label {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-label input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+#creditCard {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.countries-dropdown {
+  width: 100%;
+  display: flex;
+  flex-direction: column;   /* Stack items vertically */
+  align-items: center;      /* Horizontally center the items */
+  margin-bottom: 1em;
+}
+
+.countries-dropdown label {
+  margin-bottom: 0.5em;     /* Space between the label and dropdown */
+}
+
+.countries-dropdown select {
+  max-width: 300px;
+  width: 100%;
+}
+
+
+/* Style the donate button */
+.orphanButton {
+  background-color: #007bff;
+  color: #fff;
+  border: 1px #007bff;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 15px 30px;
+  overflow: hidden;
+  margin: 20px 0;
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.orphanButton:focus {
+  outline: none;
+}
+
+.orphanButton .circle {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  animation: scale 0.5s ease-out;
+}
+
+@keyframes scale {
+  to {
+      transform: translate(-50%, -50%) scale(3);
+      opacity: 0;
+  }
+}
+/* ----------------- END DONATE FORM CSS -----------------*/
