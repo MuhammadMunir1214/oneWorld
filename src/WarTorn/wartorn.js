@@ -1,28 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
-    var countries = document.querySelectorAll('.country');
-    var totalCountries = countries.length;
-    var radius = '40%'; // Adjust this value to set the circle size.
 
-    for (var i = 0; i < totalCountries; i++) {
-        var angle = i * (360 / totalCountries);
-        var x = 50 + Math.sin(angle * (Math.PI / 180)) * parseInt(radius, 10) + '%';
-        var y = 50 + Math.cos(angle * (Math.PI / 180)) * -parseInt(radius, 10) + '%';
-
-        countries[i].style.left = x;
-        countries[i].style.top = y;
-    }
-
-    const target = document.getElementById('typeText');
-    
-    const observer = new IntersectionObserver(function(entries) {
-        if(entries[0].isIntersecting === true) {
-            target.classList.add('start-typing');  // Add a class to start the animation
-            observer.disconnect(); // Stop observing after the animation starts
-        }
-    }, { threshold: [0] });  // start when at least 0% of the target is visible
-
-    observer.observe(target);
-});
 
 /*USED UDEMY COURSE */
 
@@ -74,7 +50,35 @@ buttons.forEach((button) => {
 
     setTimeout(() => circle.remove(), 500); // this is to remove the circle after 500ms
 
-    // ADDING THE THANK YOU TEXT AFTER THE USER DONATES
+    
+    document.addEventListener("DOMContentLoaded", function() {
+    var countries = document.querySelectorAll('.country');
+    var totalCountries = countries.length;
+    var radius = '40%'; // Adjust this value to set the circle size.
+
+    for (var i = 0; i < totalCountries; i++) {
+        var angle = i * (360 / totalCountries);
+        var x = 50 + Math.sin(angle * (Math.PI / 180)) * parseInt(radius, 10) + '%';
+        var y = 50 + Math.cos(angle * (Math.PI / 180)) * -parseInt(radius, 10) + '%';
+
+        countries[i].style.left = x;
+        countries[i].style.top = y;
+    }
+
+    const target = document.getElementById('typeText');
+    
+    const observer = new IntersectionObserver(function(entries) {
+        if(entries[0].isIntersecting === true) {
+            target.classList.add('start-typing');  // Add a class to start the animation
+            observer.disconnect(); // Stop observing after the animation starts
+        }
+    }, { threshold: [0] });  // start when at least 0% of the target is visible
+
+    observer.observe(target);
+});
+    
+      
+// ADDING THE THANK YOU TEXT AFTER THE USER DONATES
 
 
         const firstName = document.getElementById('firstName').value;
